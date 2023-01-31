@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.accordion-button:not(.collapsed),
+.accordion-button {
+  color: inherit;
+  background: #161927;
+  color: white;
+}
+
+.accordion-button:not(.collapsed)::after,
+.accordion-button::after {
+  filter: brightness(0%) invert(70%);
+}
+
+.accordion-button:focus {
+  box-shadow: inherit;
+}
+
+.accordion {
+  --bs-accordion-border-width: none;
+  --bs-accordion-bg: none;
+}
