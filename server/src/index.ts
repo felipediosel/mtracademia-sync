@@ -2,8 +2,7 @@ import express from 'express';
 import { Router, Request, Response } from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
-
-import { updateCron } from './cron/updateCron';
+import Manager from './cron/manager';
 
 dotenv.config();
 
@@ -17,12 +16,12 @@ app.use(cors({
 app.use(express.json());
 
 app.listen(process.env.PORT, () => {
-    updateCron();
+    Manager.schedule();
 });
 
 route.get('/', (req: Request, res: Response) => {
-    updateCron();
-    res.send('Cron updated!');
+    Manager.schedule();
+    res.send();
 })
 
 app.use(route);

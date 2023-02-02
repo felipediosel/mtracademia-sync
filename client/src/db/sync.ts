@@ -6,8 +6,6 @@ export function sync(handleThen: (
     documentPercent: number,
     collectionId: string
 ) => void) {
-    /*@todo Excluir versões antigas, deixar apenas as 10 últimas sincronizações.*/
-
     addDoc(CollectionVersao, {
         datahora: Timestamp.now()
     })

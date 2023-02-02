@@ -2,8 +2,6 @@ import { Collections, CollectionVersao } from './collections'
 import { addDoc, CollectionReference, DocumentReference, Timestamp } from "firebase/firestore";
 
 export function sync() {
-    /*@todo Excluir versões antigas, deixar apenas as 10 últimas sincronizações.*/
-
     addDoc(CollectionVersao, {
         datahora: Timestamp.now()
     })

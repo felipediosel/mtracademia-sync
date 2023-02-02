@@ -14,13 +14,13 @@ export const CollectionEventoAcesso = collection(firestore, 'evento-acesso');
 export const CollectionSincronizacaoAutomatica = collection(firestore, 'sincronizacao-automatica');
 
 export const Collections = [
-    CollectionPessoa,
-    CollectionServico,
+    /*CollectionPessoa,
+    CollectionServico,*/
     CollectionProduto,
-    CollectionContasReceber,
+    /*CollectionContasReceber,
     CollectionContasReceberPagtos,
     CollectionAvaliacao,
     CollectionAvaliacaoQuestao,
     CollectionAvaliacaoResposta,
-    CollectionEventoAcesso
+    CollectionEventoAcesso*/
 ];
